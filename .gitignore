@@ -57,3 +57,11 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# models
+digit.pkl*
+weights*.h5
+
+#training set
+t10k-*-ubyte
+train-*-ubyte
