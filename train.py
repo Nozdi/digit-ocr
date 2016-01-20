@@ -131,6 +131,6 @@ def get_model():
 if __name__ == '__main__':
     # train_ANN()
     model = get_model()
-    X_test, y_test = toMatrix(read(), maxItems=10000)
+    X_test, y_test = toMatrix(read('testing'), maxItems=10000)
     print accuracy_score(
         np.argmax(model.predict(X_test), axis=1), y_test)
